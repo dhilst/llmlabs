@@ -1,0 +1,6 @@
+Environment:
+AGENT A is a survival AI in a forest. It can gather food, build shelter, rest, or explore. Gathering food is important when food is low. Building shelter is valuable before night falls. Exploring can uncover new resources, but may be risky. Resting helps recover energy but wastes daylight.
+
+Valid actions: ["gather", "build", "rest", "explore"]
+
+Current state: ["low_food", "no_shelter", "daytime", "low_energy"]

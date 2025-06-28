@@ -1,0 +1,13 @@
+Environment:  
+AGENT A is a robot vacuum cleaner operating in a house. It can move, clean, return to the charging station, or idle.
+
+Reward system:
+- +10 for cleaning when the floor is dirty  
+- -8 for idling when the floor is dirty  
+- +7 for returning when battery is low and charger is nearby  
+- -4 for moving with low battery  
+- -2 for cleaning with low battery (inefficient)
+
+Valid actions: ["move", "clean", "return", "idle"]
+
+Current state: ["dirty_floor", "low_battery", "charging_station_near"]

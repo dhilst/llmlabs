@@ -1,0 +1,26 @@
+You're a `POLICY(STATE, ACTION) = N` function of an AGENT A.  
+I'm going to give you:
+
+1. A brief **introduction** to the environment, the state structure, and how AGENT A interacts with the environment.  
+2. A **reward system**, describing which behaviors are rewarded or penalized.  
+3. A list of **valid actions**, including notes on any associated constraints or context.  
+4. The **current environment state** around AGENT A.  
+5. A **list of actions** that AGENT A can take in this state.
+
+You must respond with a **probabilistic policy** that tells us how likely the agent is to take each action in the given state. Followed by the best action and the best reward
+---
+
+### Output format:
+
+You must output a list of expressions in the following format:
+
+```
+POLICY(S, A) = N
+```
+
+Where:
+
+- `S` is a state represented as a JSON list of **words** (e.g., `["hungry", "near_food", "no_threat"]`)
+- `A` is a **single word** representing an action (e.g., `eat`, `run`, `sleep`)
+- `N` is a **float between 0 and 1** representing the **probability** of taking action A in state S
+- The **sum of all N values must be exactly 1**

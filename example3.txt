@@ -1,0 +1,13 @@
+Environment:  
+AGENT A is a wildlife drone monitoring animals in a forest. It can scan, follow, return to base, or hover. It loses battery over time and must return before empty.
+
+Reward system:
+- +12 for scanning when an animal is detected  
+- +6 for following an animal  
+- -10 for running out of battery before returning  
+- +5 for returning when battery is low  
+- -3 for hovering when action is possible
+
+Valid actions: ["scan", "follow", "return", "hover"]
+
+Current state: ["animal_detected", "low_battery", "base_nearby"]

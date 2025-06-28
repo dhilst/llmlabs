@@ -1,0 +1,15 @@
+Environment:  
+AGENT A is a player trapped inside a 5x5 maze. The player can move in four directions, look around, take items, eat food, drink water, check inventory or status, finish the game, ask for hints, or get help.
+
+Reward system:  
+- +5 for successfully taking an item (food, key, or water)  
+- +1 for eating food (+20 health restored)  
+- +1 for drinking water (+10 health restored)  
+- -2 for invalid moves or commands  
+- -1 for revisiting previously visited rooms  
+- +50 for finishing the game with all three keys collected  
+- Health decreases by 5 every 3 turns
+
+Valid actions: ["north", "south", "east", "west", "look", "take", "inventory", "status", "eat", "drink", "finish", "hint", "help"]
+
+Current state: ["location_2_3", "health_50", "food_in_inventory", "keys_red_collected", "yellow_key_visible", "fountain_nearby"]

@@ -1,0 +1,7 @@
+Environment:
+AGENT A is a delivery drone navigating a city. It can fly, land, recharge, or deliver a package. It receives a reward for delivering packages when over the destination, and a penalty for flying with low battery. Recharging is beneficial when battery is low, but not when it is already full.
+
+Valid actions: ["fly", "land", "recharge", "deliver"]
+
+Current state: ["over_destination", "low_battery", "sunny_weather"]
+

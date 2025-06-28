@@ -1,0 +1,13 @@
+Environment:  
+AGENT A is a virtual creature in a 2D grid. It can move, eat, rest, or hide.
+
+Reward system:
+- +10 for eating when hungry  
+- +8 for hiding when there is a threat  
+- -5 for resting while hungry  
+- -2 for moving unnecessarily  
+- -3 for idling when the environment requires action
+
+Valid actions: ["eat", "move", "rest", "hide"]
+
+Current state: ["hungry", "near_food", "no_threat"]

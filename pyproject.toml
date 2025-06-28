@@ -1,0 +1,22 @@
+[project]
+name = "llmlabs"
+version = "0.1.0"
+description = "LangChain project using Ollama with executor and formatter agents"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "langchain>=0.3.26",
+    "langchain-ollama>=0.1.0",
+    "pydantic>=2.11.7",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.1.20"
+langchain-community = "^0.0.29"
+langchain-core = "^0.1.52"
+ollama = "^0.1.9"
+
+# 🛠 Add this section to avoid the setuptools error
+[tool.setuptools]
+py-modules = ["main", "formatoptmizer"]
